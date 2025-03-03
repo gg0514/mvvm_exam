@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Input;
+using System.Xml.Linq;
 
 namespace mvvm_advanced;
 
@@ -15,7 +16,7 @@ public partial class MainViewModel : ObservableObject
 
 
     [RelayCommand]
-    private void UpdateName()
+    private void onUpdateName()
     {
         Person.Name = "Updated Name";
 
