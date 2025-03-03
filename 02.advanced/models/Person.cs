@@ -4,11 +4,9 @@ namespace mvvm_advanced;
 public partial class Person : ObservableObject
 {
 
-    [ObservableProperty]
-    private string  _name;
+    [ObservableProperty] private string  _name;
 
-    [ObservableProperty]
-    private int     _age;
+    [ObservableProperty] private int     _age;
     
     // Name 변경 감지
     partial void OnNameChanged(string value)
